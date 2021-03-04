@@ -79,13 +79,13 @@ public class Main {
 //			
 //			int count = 0;
 //			if (R > r1 + r2 || R + r1 < r2)
-//                count = 0;
-//            else if ((R == r1 + r2 || R + r1 == r2) && R != 0)
-//                count = 1;
-//            else if (R < r1 + r2 && R != 0)
-//                count = 2;
-//            else
-//                count = -1;
+//				count = 0;
+//			else if ((R == r1 + r2 || R + r1 == r2) && R != 0)
+//				count = 1;
+//			else if (R < r1 + r2 && R != 0)
+//				count = 2;
+//			else
+//				count = -1;
 //			System.out.println(count);
 //		}
 //	}
