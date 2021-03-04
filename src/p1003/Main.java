@@ -32,7 +32,7 @@ public class Main {
 	}
 }
 
-// 시간 초과 뜸
+//시간 초과 뜸
 //package p1003;
 //
 //import java.io.BufferedReader;
