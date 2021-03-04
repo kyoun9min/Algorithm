@@ -32,7 +32,7 @@ public class Main {
 	}
 }
 
-// ½Ã°£ ÃÊ°ú ¶ä
+//ìž¬ê·€ êµ¬í˜„ (ì‹œê°„ ì´ˆê³¼ ëœ¸)
 //package p1003;
 //
 //import java.io.BufferedReader;
