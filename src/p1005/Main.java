@@ -40,11 +40,11 @@ public class Main {
 
 		Scanner scanner = new Scanner(System.in);
 		int T = scanner.nextInt();
-		int numberOfBuilding = scanner.nextInt();
-		int numberOfOrder = scanner.nextInt();
 		
 		// 테스트 케이스의 수 만큼 반복
 		for (int t = 0; t < T; t++) {
+			int numberOfBuilding = scanner.nextInt();
+			int numberOfOrder = scanner.nextInt();
 			Building[] buildingList = new Building[numberOfBuilding];
 			// 건물목록을 배열에 담기
 			for (int i = 0; i < numberOfBuilding; i++) {
@@ -59,7 +59,7 @@ public class Main {
 				
 				buildingList[targetBuilding].preBuildingList.add(buildingList[preBuilding]);
 			}
-			int targetBuilding = scanner.nextInt();
+			int targetBuilding = scanner.nextInt() - 1;
 			System.out.println(getTotalBuildTime(buildingList[targetBuilding]));
 		}
 	}
