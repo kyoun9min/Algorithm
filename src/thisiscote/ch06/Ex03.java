@@ -26,9 +26,13 @@ public class Ex03 {
 		Arrays.sort(b);
 		
 		for (int i = 0; i < K; i++) {
-			int temp = a[i];
-			a[i] = b[N - 1 - i];
-			b[N - 1 - i] = temp;
+			if (a[i] < b[i]) { // a[i] 가 작을때만 swap
+				int temp = a[i];
+				a[i] = b[N - 1 - i];
+				b[N - 1 - i] = temp;
+			}
+			else // a[i] 가 크거나 같아버리면 b[i] 의 나머지 원소는 볼 것도 없이 캍! (정렬 되어있기 때문)
+				break;
 		}
 		System.out.println(Arrays.stream(a).sum());
 	}
