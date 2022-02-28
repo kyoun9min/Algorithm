@@ -20,7 +20,7 @@ public class Ex02 {
 			int mid = (lt + rt) / 2;
 			int sum = 0;
 			for (int i = 0; i < N; i++)
-				sum += a[i] - mid; // 자를 길이(mid) 보다 클때만 더해줘야지 안그러면 -값을 더해주게 되면서 값이 줄어든다.
+				if (a[i] > mid) sum += a[i] - mid; // 자를 길이(mid) 보다 클때만 더해줘야지 안그러면 -값을 더해주게 되면서 값이 줄어든다.
 			if (sum >= M) {
 				answer = mid;
 				lt = mid + 1;
