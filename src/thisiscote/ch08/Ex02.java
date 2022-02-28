@@ -13,9 +13,11 @@ public class Ex02 {
 		StringTokenizer st = new StringTokenizer(br.readLine());
 		for (int i = 0; i < N; i++)
 			a[i] = Integer.parseInt(st.nextToken());
+		
 		int[] dp = new int[N];
 		dp[0] = a[0];
 		dp[1] = Math.max(a[0], a[1]);
+		
 		for (int i = 2; i < N; i++) {
 			dp[i] = Math.max(dp[i - 1], dp[i - 2] + a[i]);
 		}
