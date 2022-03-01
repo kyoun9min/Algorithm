@@ -44,7 +44,7 @@ public class Ex03 {
 			}
 		}
 		
-		if (graph[1][K] + graph[K][X] > INF) System.out.println(-1);
+		if (graph[1][K] + graph[K][X] >= INF) System.out.println(-1);
 		else System.out.println(graph[1][K] + graph[K][X]);
 	}
 
