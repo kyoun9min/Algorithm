@@ -67,7 +67,7 @@ public class Ex04 {
 		
 		dijkstra(C);
 		
-		int count = -1;
+		int count = -1; // 시작 도시는 제외해야 하므로 -1 해주는 것 대신 -1로 시작
 		int max = 0;
 		for (int i = 1; i <= N; i++) {
 			if (dist[i] != Integer.MAX_VALUE) {
