@@ -30,8 +30,8 @@ public class Q03 {
 //			}
 		}
 		
-		System.out.println("cnt0 : " + cnt0);
-		System.out.println("cnt1 : " + cnt1);
+//		System.out.println("cnt0 : " + cnt0);
+//		System.out.println("cnt1 : " + cnt1);
 		System.out.println(Math.min(cnt0, cnt1));
 	}
 
