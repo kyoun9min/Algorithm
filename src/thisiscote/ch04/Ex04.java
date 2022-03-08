@@ -53,7 +53,7 @@ public class Ex04 {
 				// 뒤로 빽
 				x = x - dr[dir];
 				y = y - dc[dir];
-				turn = 0;
+				turn = 0; // 이거 안넣어주면 turn이 계속 증가하면서 무한루프에 빠짐
 				// 근데 뒤가 바다
 				if (map[x][y] == 1) break;
 			}
