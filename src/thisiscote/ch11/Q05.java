@@ -20,7 +20,7 @@ public class Q05 {
 		}
 		
 		int answer = 0;
-		for (int i = 1; i <= M; i++) {
+		for (int i = 1; i < M; i++) { // 마지막 공은 볼 필요도 없다.
 			N -= arr[i]; // 전체 갯수에서 현재 고른 무게의 갯수를 빼준다.
 			answer += arr[i] * N; // 현재 고른 무게의 갯수 x 나머지 공들의 갯수
 		}

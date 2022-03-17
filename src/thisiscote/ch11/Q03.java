@@ -4,10 +4,10 @@ import java.util.*;
 import java.io.*;
 
 public class Q03 {
-
+	
 	public static void main(String[] args) throws IOException {
-
-		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));		
 		String s = br.readLine() + " "; // 마지막에 같은숫자로 끝나는 경우 카운팅이 안되는 것을 방지하기 위해 공백문자 하나 넣기
 		int cnt0 = 0;
 		int cnt1 = 0;
@@ -34,5 +34,26 @@ public class Q03 {
 //		System.out.println("cnt1 : " + cnt1);
 		System.out.println(Math.min(cnt0, cnt1));
 	}
+
+//	public static void main(String[] args) throws IOException {
+//
+//		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+//		
+//		String s = br.readLine();
+//		int cnt0 = 0;
+//		int cnt1 = 0;
+//		for (int i = 0; i < s.length() - 1; i++) {
+//			if (s.charAt(i) == '0') {
+//
+//				if (s.charAt(i) != s.charAt(i + 1)) cnt1++;
+//			}
+//			else {
+//				if (s.charAt(i) != s.charAt(i + 1)) cnt0++;
+//			}
+//		}
+//		if (s.charAt(s.length() - 1) == '0') cnt1++;
+//		else cnt0++;
+//		System.out.println(Math.min(cnt0, cnt1));
+//	}
 
 }
